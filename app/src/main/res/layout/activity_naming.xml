@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr" android:textDirection="ltr"
+    android:background="@mipmap/spacegalaxy"
+    tools:context=".NamingActivity">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ibRollbackId"
+            android:src="@mipmap/right_button"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            style="@style/name_cell_style"
+            android:background="@color/colorBrown"
+            android:id="@+id/tvLetter0"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:background="@color/colorBrown"
+            android:id="@+id/tvLetter1"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:background="@color/colorBrown"
+            android:id="@+id/tvLetter2"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:background="@color/colorBrown"
+            android:id="@+id/tvLetter3"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:background="@color/colorBrown"
+            android:id="@+id/tvLetter4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center" android:gravity="center"
+        android:layoutDirection="ltr">
+
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:tooltipText="Sound off"
+            android:layout_gravity="center"
+            android:layoutDirection="ltr"
+            android:id="@+id/ibSoundOff"
+            android:src="@mipmap/pinkpantherbtn"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/radioBtnName"
+            android:visibility="invisible"
+            >
+            <RadioButton android:id="@+id/ariel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אריאל"
+                android:checked="true"/>
+
+            <RadioButton android:id="@+id/lior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ליאור"
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <SeekBar
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#aba"
+        android:id="@+id/sb"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/name_cell_style"
+            android:visibility="invisible"
+            android:textColor="@color/colorBrown"
+            android:background="@color/colorYellow"
+            android:id="@+id/tvBase0"
+            />
+
+        <TextView
+            style="@style/name_cell_style"
+            android:textColor="@color/colorBrown"
+            android:background="@color/colorYellow"
+            android:id="@+id/tvBase1"
+            android:visibility="invisible"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:textColor="@color/colorBrown"
+            android:background="@color/colorYellow"
+            android:id="@+id/tvBase2"
+            android:visibility="invisible"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:textColor="@color/colorBrown"
+            android:background="@color/colorYellow"
+            android:id="@+id/tvBase3"
+            android:visibility="invisible"/>
+
+        <TextView
+            style="@style/name_cell_style"
+            android:textColor="@color/colorBrown"
+            android:background="@color/colorYellow"
+            android:id="@+id/tvBase4"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
